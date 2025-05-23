@@ -80,16 +80,16 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 85vw;
+    width: 90vw;
 }
 
 #tagline>h1{
-    font-size: 33px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 #tagline>p {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
@@ -102,7 +102,7 @@ html, body{
 
 #email-input{
     margin-top: 16px;
-    width: 85vw;
+    width: 90vw;
     height: 50px;
     padding: 10px;
     font-size: 15px;
@@ -325,4 +325,233 @@ footer{
     padding-top: 50px;
     padding-bottom: 100px;
     color: #ffffff79;
+}
+
+
+/* for 600-959px screens */
+@media (min-width: 600px){
+    #header{
+        margin: 0px 35px 0 25px;
+        padding: 25px 0;
+    }
+
+    #language{
+        font-size: 15px;
+        text-align: center;
+        width: 100px;
+    }
+
+    /* tagline div */
+    #tagline{
+        width: 450px;
+    }
+    
+    #email-getstarted{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        width: 450px;
+    }
+    
+    #email-input{
+        width: 60%;
+    }
+    
+    .get-btn{
+        width: 185px;
+    }
+
+
+    /* learn more */
+    #learn-more{
+        /* margin-top: 100px; */
+        position: static;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+    }
+
+    #learn-more > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        width: 90%;
+        border-radius: 15px;
+        background: linear-gradient(to right, rgb(38, 23, 52), rgb(21, 26, 62));
+    }
+
+    #learn-more>div>div>p {
+        padding-bottom: 0;
+    }
+
+    #popcorn-image{
+        position: static;
+    }
+
+
+    /* main */
+    main{
+        padding: 0 40px;
+    }    
+
+
+    /* ready */
+    #ready > div{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #ready > p{
+        text-align: center;
+    }
+
+    #email-input2{
+        width: 80%;
+        height: 50px;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 900;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid gray;
+        border-radius: 5px;   
+    }
+
+
+    /* footer */
+    footer{
+        padding: 60px 40px 0 40px;
+    }
+
+    #footer-help{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer-help>ul>li{
+        padding: 10px 0;
+    }
+}
+
+
+/* for 960px and greater*/
+@media (min-width: 960px){
+    #header {
+        margin: 0px 80px 0 70px;
+    }
+
+    #netflix-logo{
+        height: 70px;
+        margin-top: -5px;
+    }
+
+    /* tagline div */
+    #tagline{
+        width: 520px;
+    }
+
+    #tagline>h1{
+        font-size: 40px;
+    }
+
+    #tagline>p {
+        font-size: 17px;
+    }
+
+    #email-getstarted {
+        width: 520px;
+    }
+
+    #email-input {
+        width: 70%;
+    }
+
+    /* main */
+    main {
+        padding: 0 80px;
+    }
+
+    /* learn more - no update */
+
+    /* trending  */
+    #trending-now>h2{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    #trending-list{
+        gap: 40px;
+    }
+
+    .trending-image{
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    /* reasons */
+    #more-reasons{
+        margin-top: 80px;
+    }
+
+    #more-reasons>h2{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #reasons{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .reason > p{
+        margin-bottom: 80px;
+    }
+
+    .reason > img{
+        height: 80px;
+    }
+
+
+    /* faqs */
+    .faq{
+        font-size: 24px;
+    }
+
+    .plus-icon {
+        font-size: 45px;
+    }
+
+    #faq > h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    
+    /* ready */
+    #ready{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ready > div{
+        width: 600px;
+    }
+
+    #email-input2 {
+        width: 70%;
+    }
+
+
+    /* footer */
+    footer {
+        padding: 60px 80px 0 80px;
+    }
+
+    #footer-help {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
