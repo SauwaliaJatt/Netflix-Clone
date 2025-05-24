@@ -102,7 +102,7 @@ html, body{
 
 #email-input{
     margin-top: 16px;
-    color: white;
+    color: white !important;
     width: 90vw;
     height: 50px;
     padding: 10px;
@@ -312,7 +312,7 @@ main{
     margin-top: 16px;
     width: 100%;
     height: 50px;
-    color: white;
+    color: white !important;
     padding: 10px;
     font-size: 15px;
     font-weight: 900;
